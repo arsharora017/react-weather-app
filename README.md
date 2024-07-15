@@ -1,4 +1,5 @@
 # Weather App
 
-- Create React Aoo
+- Create React App
 - Configured Tailwindcss
+- Installed react-icons
