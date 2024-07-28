@@ -3,7 +3,7 @@ import HeaderCities from "./HeaderCities";
 import { Inputs } from "./Inputs";
 import TimeAndLocation from "./TimeAndLocation";
 
-const Header = () => {
+const Header = (weather) => {
   return (
     <div className="flex flex-col border-b-2 border-white">
       <div className="grid grid-rows-1 grid-flow-col">
@@ -13,7 +13,7 @@ const Header = () => {
         </div>
       </div>
       <Inputs />
-      <TimeAndLocation />
+      <TimeAndLocation weather={weather} />
     </div>
   );
 };

@@ -3,13 +3,13 @@ import DailyForcast from "./DailyForcast";
 import HourlyForcast from "./HourlyForcast";
 import WeatherToday from "./WeatherToday";
 
-const MainContainer = () => {
+const MainContainer = (weather) => {
   return (
     <div className="flex flex-col items-center mb-28">
-      <CityWeatherContainer />
-      <WeatherToday />
-      <HourlyForcast />
-      <DailyForcast />
+      <CityWeatherContainer weather={weather} />
+      <WeatherToday weather={weather} />
+      <HourlyForcast weatherHourly={weather.weather.hourly} />
+      <DailyForcast weatherDaily={weather.weather.daily} />
     </div>
   );
 };

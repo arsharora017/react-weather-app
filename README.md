@@ -2,4 +2,5 @@
 
 - Create React App
 - Configured Tailwindcss
-- Installed react-icons
+- Configured react-icons
+- Configured Luxon - library for working with dates and times in JavaScript.

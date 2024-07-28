@@ -7,7 +7,7 @@ export const Inputs = () => {
         <input
           type="text"
           placeholder="Search City"
-          className="text-gray-500 text-xl font-light p-w w-full shadow-xl capitalize focus:outline-none"
+          className="text-gray-500 text-xl font-light p-w w-full shadow-xl capitalize focus:outline-none p-1 rounded-lg"
         />
         <BiSearch
           size={30}
