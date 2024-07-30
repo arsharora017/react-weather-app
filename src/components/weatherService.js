@@ -1,11 +1,12 @@
 import { DateTime } from "luxon";
 
-const API_KEY = "8ce7554f2ac70f338f7e9126858bfa67";
+const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+console.log(WEATHER_API_KEY);
 const BASE_URL = "https://api.openweathermap.org/data/2.5/";
 
 const getWeatherData = (infoType, searchParams) => {
   const url = new URL(BASE_URL + infoType);
-  url.search = new URLSearchParams({ ...searchParams, appid: API_KEY });
+  url.search = new URLSearchParams({ ...searchParams, appid: WEATHER_API_KEY });
 
   return fetch(url).then((res) => res.json());
 };
@@ -30,7 +31,6 @@ const formatCurrent = (data) => {
     weather,
     wind: { speed },
     timezone,
-    rain,
   } = data;
 
   const { description, icon } = weather[0];
@@ -55,7 +55,6 @@ const formatCurrent = (data) => {
     timezone,
     lat,
     lon,
-    rain,
   };
 };
 
@@ -71,7 +70,6 @@ const formatForecastWeather = (secs, offset, data) => {
       data: f.dt_txt,
     }))
     .slice(0, 5);
-
   //daily
 
   const daily = data
@@ -97,9 +95,9 @@ const getFormattedWeatherData = async (searchParams) => {
   const formattedForecastWeather = await getWeatherData("forecast", {
     lat,
     lon,
-    // units: searchParams.units,
+    units: searchParams.units,
   }).then((d) => formatForecastWeather(dt, timezone, d.list));
-  //   console.log(formattedForecastWeather);
+
   return { ...formattedCurrentWeather, ...formattedForecastWeather };
 };
 

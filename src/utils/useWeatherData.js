@@ -1,23 +1,22 @@
-import { useEffect, useState } from "react";
-import getFormattedWeatherData from "../components/weatherService";
+// import { useEffect, useState } from "react";
+// import getFormattedWeatherData from "../components/weatherService";
 
-const useWeatherData = () => {
-  const [query, setQuery] = useState({ q: "Toronto" });
-  const [units, setUnits] = useState("metric");
-  const [weather, setWeather] = useState(null);
+// const useWeatherData = () => {
+//   const [query, setQuery] = useState({ q: "Toronto" });
+//   const [units, setUnits] = useState("metric");
+//   const [weather, setWeather] = useState(null);
 
-  const getWeather = async () => {
-    await getFormattedWeatherData({ ...query, units }).then((data) => {
-      setWeather(data);
-    });
-  };
+//   const getWeather = async () => {
+//     await getFormattedWeatherData({ ...query, units }).then((data) => {
+//       setWeather(data);
+//     });
+//   };
 
-  useEffect(() => {
-    getWeather();
-  }, [query, units]);
-  console.log(weather);
+//   useEffect(() => {
+//     getWeather();
+//   }, [query, units]);
 
-  return weather;
-};
+//   return weather;
+// };
 
-export default useWeatherData;
+// export default useWeatherData;

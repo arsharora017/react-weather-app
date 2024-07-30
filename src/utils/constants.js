@@ -38,68 +38,68 @@ export const cities = [
 //   { id: 6, Icon: GiSunset, title: "Sunset", value: "7:30 pm" },
 // ];
 
-export const hourlyForcastDummyData = [
-  {
-    id: 1,
-    dayOrTime: "Now",
-    temp: "24°",
-    weather: "https://openweathermap.org/img/wn/01d@2x.png",
-  },
-  {
-    id: 2,
-    dayOrTime: "19:00",
-    temp: "24°",
-    weather: "https://openweathermap.org/img/wn/01d@2x.png",
-  },
-  {
-    id: 3,
-    dayOrTime: "20:00",
-    temp: "24°",
-    weather: "https://openweathermap.org/img/wn/01d@2x.png",
-  },
-  {
-    id: 4,
-    dayOrTime: "21:00",
-    temp: "24°",
-    weather: "https://openweathermap.org/img/wn/01d@2x.png",
-  },
-  {
-    id: 5,
-    dayOrTime: "22:00",
-    temp: "24°",
-    weather: "https://openweathermap.org/img/wn/01d@2x.png",
-  },
-];
+// export const hourlyForcastDummyData = [
+//   {
+//     id: 1,
+//     dayOrTime: "Now",
+//     temp: "24°",
+//     weather: "https://openweathermap.org/img/wn/01d@2x.png",
+//   },
+//   {
+//     id: 2,
+//     dayOrTime: "19:00",
+//     temp: "24°",
+//     weather: "https://openweathermap.org/img/wn/01d@2x.png",
+//   },
+//   {
+//     id: 3,
+//     dayOrTime: "20:00",
+//     temp: "24°",
+//     weather: "https://openweathermap.org/img/wn/01d@2x.png",
+//   },
+//   {
+//     id: 4,
+//     dayOrTime: "21:00",
+//     temp: "24°",
+//     weather: "https://openweathermap.org/img/wn/01d@2x.png",
+//   },
+//   {
+//     id: 5,
+//     dayOrTime: "22:00",
+//     temp: "24°",
+//     weather: "https://openweathermap.org/img/wn/01d@2x.png",
+//   },
+// ];
 
-export const dailyForcastDummyData = [
-  {
-    id: 1,
-    dayOrTime: "Today",
-    temp: "24°/28°",
-    weather: "https://openweathermap.org/img/wn/01d@2x.png",
-  },
-  {
-    id: 2,
-    dayOrTime: "Sunday",
-    temp: "24°/28°",
-    weather: "https://openweathermap.org/img/wn/01d@2x.png",
-  },
-  {
-    id: 3,
-    dayOrTime: "Monday",
-    temp: "24°/28°",
-    weather: "https://openweathermap.org/img/wn/01d@2x.png",
-  },
-  {
-    id: 4,
-    dayOrTime: "Tuesday",
-    temp: "24°/28°",
-    weather: "https://openweathermap.org/img/wn/01d@2x.png",
-  },
-  {
-    id: 5,
-    dayOrTime: "Wednesday",
-    temp: "24°/28°",
-    weather: "https://openweathermap.org/img/wn/01d@2x.png",
-  },
-];
+// export const dailyForcastDummyData = [
+//   {
+//     id: 1,
+//     dayOrTime: "Today",
+//     temp: "24°/28°",
+//     weather: "https://openweathermap.org/img/wn/01d@2x.png",
+//   },
+//   {
+//     id: 2,
+//     dayOrTime: "Sunday",
+//     temp: "24°/28°",
+//     weather: "https://openweathermap.org/img/wn/01d@2x.png",
+//   },
+//   {
+//     id: 3,
+//     dayOrTime: "Monday",
+//     temp: "24°/28°",
+//     weather: "https://openweathermap.org/img/wn/01d@2x.png",
+//   },
+//   {
+//     id: 4,
+//     dayOrTime: "Tuesday",
+//     temp: "24°/28°",
+//     weather: "https://openweathermap.org/img/wn/01d@2x.png",
+//   },
+//   {
+//     id: 5,
+//     dayOrTime: "Wednesday",
+//     temp: "24°/28°",
+//     weather: "https://openweathermap.org/img/wn/01d@2x.png",
+//   },
+// ];

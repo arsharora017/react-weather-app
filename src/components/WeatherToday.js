@@ -5,19 +5,18 @@ import { WiHumidity } from "react-icons/wi";
 
 const WeatherToday = ({
   weather: {
-    weather: {
-      name,
-      country,
-      feels_like,
-      temp_max,
-      temp_min,
-      humidity,
-      speed,
-      visibility,
-      sunrise,
-      sunset,
-    },
+    name,
+    country,
+    feels_like,
+    temp_max,
+    temp_min,
+    humidity,
+    speed,
+    visibility,
+    sunrise,
+    sunset,
   },
+  units,
 }) => {
   const weatherDetails = [
     {
@@ -27,12 +26,19 @@ const WeatherToday = ({
       value: `${temp_max.toFixed()}°/${temp_min.toFixed()}°`,
     },
     { id: 2, Icon: WiHumidity, title: "Humidity", value: `${humidity}%` },
-    { id: 3, Icon: FaWind, title: "Wind", value: `${speed.toFixed()}km/hr` },
+    {
+      id: 3,
+      Icon: FaWind,
+      title: "Wind",
+      value: `${
+        units === "metric" ? (speed * 3.6).toFixed() : speed.toFixed()
+      } ${units === "metric" ? "km/hr" : "miles/hr"}`,
+    },
     {
       id: 4,
       Icon: MdOutlineVisibility,
       title: "Visibility",
-      value: `${visibility}`,
+      value: `${visibility / 1000} km`,
     },
     { id: 5, Icon: GiSunrise, title: "Sunrise", value: `${sunrise}` },
     { id: 6, Icon: GiSunset, title: "Sunset", value: `${sunset}` },

@@ -1,13 +1,12 @@
 import React from "react";
-import { dailyForcastDummyData } from "../utils/constants";
 import Card from "./Card";
 
-const DailyForcast = () => {
+const DailyForcast = ({ weatherDaily }) => {
   return (
     <div className="border-white border mt-8 rounded-lg p-4 w-3/4">
       <div className="text-xl">Daily Forcast</div>
-      {dailyForcastDummyData.map((dailyForcastData) => (
-        <Card key={dailyForcastData.id} forcastData={dailyForcastData} />
+      {weatherDaily.map((dailyForcastData, index) => (
+        <Card key={weatherDaily[index].title} forcastData={dailyForcastData} />
       ))}
     </div>
   );

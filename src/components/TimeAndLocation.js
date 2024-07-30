@@ -1,4 +1,4 @@
-const TimeAndLocation = ({ weather: { weather } }) => {
+const TimeAndLocation = ({ weather }) => {
   return (
     <div>
       <div className="flex items-center justify-center my-6">
